@@ -92,6 +92,7 @@ def tenthGuaranteeProPMF():
     plt.subplot(1, 2, 2)
     plt.bar(index, cdf, label='CDF')
     plt.title('CDF of minimum tenth guarantee')
+    plt.show()
 
 
 def extendedModel():
@@ -144,7 +145,7 @@ def extendedModel():
     """ 根据绘制的图像进行相应的计算 """
     print('At the first 50 draws, only %.2f%% players can get A' %(cdf[49]*100))
     print('%.2f%% players get A bewteen 40 draws and 70 draws'%((cdf[69]-cdf[39])*100))
-
+    plt.show()
 def main():
     # increasePro()
     # tenthGuaranteeProPMF()
